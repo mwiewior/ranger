@@ -33,24 +33,24 @@
     </parent>
     <dependencies>
         <dependency>
-            <groupId>io.prestosql</groupId>
+            <groupId>com.facebook.presto</groupId>
             <artifactId>presto-spi</artifactId>
             <version>${presto.version}</version>
         </dependency>
         <dependency>
-            <groupId>io.prestosql</groupId>
+            <groupId>com.facebook.presto</groupId>
             <artifactId>presto-jdbc</artifactId>
             <version>${presto.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.ranger</groupId>
             <artifactId>ranger-plugins-common</artifactId>
-            <version>${project.version}</version>
+            <version>0.7.0</version>
         </dependency>
         <dependency>
             <groupId>org.apache.ranger</groupId>
             <artifactId>ranger-plugins-audit</artifactId>
-            <version>${project.version}</version>
+            <version>0.7.0</version>
         </dependency>
     </dependencies>
 </project>
