@@ -432,6 +432,7 @@ public class PrestoClient extends BaseClient implements Closeable {
             }
           }
         } catch (SQLTimeoutException sqlt) {
+
           String msgDesc = "Time Out, Unable to execute SQL [" + sql
             + "].";
           HadoopException hdpException = new HadoopException(msgDesc,
@@ -481,11 +482,11 @@ public class PrestoClient extends BaseClient implements Closeable {
     return columnList;
   }
 
-  public static Map<String, Object> connectionTest(String serviceName,
+  public static HashMap<String, Object> connectionTest(String serviceName,
                                                    Map<String, String> connectionProperties)
     throws Exception {
     PrestoClient client = null;
-    Map<String, Object> resp = new HashMap<String, Object>();
+    HashMap<String, Object> resp = new HashMap<String, Object>();
 
     boolean status = false;
 

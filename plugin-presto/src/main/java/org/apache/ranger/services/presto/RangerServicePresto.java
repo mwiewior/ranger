@@ -34,8 +34,8 @@ public class RangerServicePresto extends RangerBaseService {
   private static final Log LOG = LogFactory.getLog(RangerServicePresto.class);
 
   @Override
-  public Map<String, Object> validateConfig() throws Exception {
-    Map<String, Object> ret = new HashMap<String, Object>();
+  public HashMap<String, Object> validateConfig() throws Exception {
+    HashMap<String, Object> ret = new HashMap<String, Object>();
     String serviceName = getServiceName();
 
     if (LOG.isDebugEnabled()) {

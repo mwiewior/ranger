@@ -25,6 +25,7 @@ import org.apache.ranger.plugin.util.TimedEventUtil;
 
 import java.util.List;
 import java.util.Map;
+import java.util.HashMap;
 import java.util.concurrent.Callable;
 import java.util.concurrent.TimeUnit;
 
@@ -37,8 +38,8 @@ public class PrestoResourceManager {
   private static final String  COLUMN	 	  = "column";
 
 
-  public static Map<String, Object> connectionTest(String serviceName, Map<String, String> configs) throws Exception {
-    Map<String, Object> ret = null;
+  public static HashMap<String, Object> connectionTest(String serviceName, Map<String, String> configs) throws Exception {
+    HashMap<String, Object> ret = null;
 
     if (LOG.isDebugEnabled()) {
       LOG.debug("==> PrestoResourceMgr.connectionTest ServiceName: " + serviceName + "Configs" + configs);
